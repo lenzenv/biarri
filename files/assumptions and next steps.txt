@@ -1,0 +1,34 @@
+
+ASSUMPTIONS:
+
+- Looking at the data, shifts are unique based on their start date and time. 
+All shifts require 60 minutes of break and have a duration of 8.5 hours.
+Therefore shifts with the same start time will be treated as the same shift type in the model.
+
+- There need to be at least 12 hours rest between two consecutive shifts.
+
+- Employees should receive an equal amount of shifts. 
+There are 56 shifts and 13 employees. This means 4.3 shifts per employee.
+The model assigns between 3 and 5 shifts for each employee (soft constraint).
+
+
+
+NEXT STEPS:
+
+- Implementation of a user interface to enter and modify data and parameters. 
+
+- Implementation of a visualization, ideally in a gantt chart with the possibility of manual schedule adjustments.
+
+- Implementation of a database to store the latest schedule.
+
+
+- Optimization model
+Include more detailed rules based on the answers from the rosterer (see also "questions for rosterer.txt")
+Improve the constraint on allowed shift combinations by grouping the shifts smarter.
+
+- Adjust the code to be more generic:
+Let the code identify the working directory instead of hard-coding it.
+Ask the user for input on data assumptions (e.g. rest time between shifts, weights in objective function).
+
+
+

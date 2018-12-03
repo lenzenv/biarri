@@ -1,0 +1,27 @@
+
+
+What are the rules to be considered when allocating shifts?
+
+1) SKILLS 
+- Can every employee cover every shift or are there any skills to be considered?
+
+2) SHIFT TYPES 
+- Are there different types of shifts? Are there any specific rules for the different shift types? 
+for example: "A shift crossing midnight is considered a night shift. Employees should have a day off after a night shift."
+
+3) REST RULES 
+- What is the minimum time off between two shifts? - the current implementation assumes 12 hours
+- Is there any rule about the maximum number of consecutive shifts? for example: "every employee must have a day off after 5 consecutive work days"
+
+4) WORK LOAD BALANCING AND COSTS
+- Is there any preference on how to balance workload? - the current implementation tries to assign the same number of shifts to each employee
+- Are there any additional costs related to shift assignment? for example: "more than 1 shift on a weekend is considered overtime and paid more"
+
+5) EMPLOYEE AVAILABILITY AND PREFERENCES
+- Do you usually consider employee preferences for scheduling?
+- Are all employees fully available or can they specify unavailabilities? How about vacation times?
+
+6) BREAK ALLOCATION
+- Should the application allocate breaks?
+- How should the breaks be allocated? for example: "a break cannot be in the first 2 hours or the last 2 hours of a shift"
+
